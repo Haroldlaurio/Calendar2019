@@ -1,0 +1,75 @@
+body {
+  background-color: burlywood
+}
+
+.a {
+  color: coral;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: 30%;
+  background-color: whitesmoke;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: bolder;
+  font-size: 200%;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  border: 10px gold solid;
+  border-radius: 10%;
+  box-shadow: -20px 20px 20px black;
+  border-left-color: gold;
+  border-bottom-color: gold;
+  border-top: 3px gold solid;
+  border-right: 3px gold solid;
+}
+
+.b {
+  color: yellowgreen;
+  background-color: antiquewhite;
+  padding-top: 30%;
+  padding-bottom: 30%;
+  margin-bottom: 10%;
+  text-align: center;
+  text-shadow: 5px 5px 2px black;
+  font-size: 500%;
+  font-weight: bolder;
+  border-radius: 10%;
+  border: 30px solid green;
+  margin: 20px;
+  box-shadow: -20px 20px 20px black;
+  border-radius: 100%;
+  border-left-color: greenyellow;
+  border-bottom-color: aqua;
+  border-top: 3px greenyellow solid;
+  border-right: 3px aqua solid;
+}
+
+div::first-line{
+  color: aqua ;
+}
+div::selection {
+  background-color: whitesmoke
+  
+}
+
+b {
+  cursor: pointer;
+  padding: 12px 20px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.b:hover {
+  background-color: red;
+}
+
+    
+.b:active {
+  transform: scale(0.90);
+}
+
+
