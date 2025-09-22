@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>May</title>
+  <link rel="stylesheet" href="MAY.css">
+</head>
+<body>
+  <div class="class">
+    <div class="jan" onclick="window.location.href='JANUARY.html'">
+      <p>Jan</p>
+    </div>
+    <div class="feb" onclick="window.location.href='FEBRUARY.html'">
+      <p>Feb</p>
+    </div>
+    <div class="mar" onclick="window.location.href='MARCH.html'">
+      <p>Mar</p>
+    </div>
+    <div class="apr" onclick="window.location.href='APRIL.html'">
+      <p>Apr</p>
+    </div>
+    <div class="may" onclick="window.location.href='MAY.html'">
+      <p>May</p>
+    </div>
+    <div class="jun" onclick="window.location.href='JUNE.html'">
+      <p>Jun</p>
+    </div>
+    <div class="jul" onclick="window.location.href='JULY.html'">
+      <p>Jul</p>
+    </div>
+    <div class="aug" onclick="window.location.href='AUGUST.html'">
+      <p>Aug</p>
+    </div>
+    <div class="sep" onclick="window.location.href='SEPTEMBER.html'">
+      <p>Sep</p>
+    </div>
+    <div class="oct" onclick="window.location.href='OCTOBER.html'">
+      <p>Oct</p>
+    </div>
+    <div class="nov" onclick="window.location.href='NOVEMBER.html'">
+      <p>Nov</p>
+    </div>
+    <div class="dec" onclick="window.location.href='DECEMBER.html'">
+      <p>Dec</p>
+    </div>
+  </div>
+  <div>
+    <div class="a" id="aa"> MAY 2019</div>
+  </div>
+    <div class="b">
+    <div class="c">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div class="c">SAT</div>
+    </div>
+  <div class="d">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>1</div>
+    <div class="e" 
+      onclick="showLab('Labour Day')">2</div>
+    <div>3</div>
+    <div class="c">4</div>
+    <div class="c">5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div class="c">11</div>
+    <div class="c">12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div class="c">18</div>
+    <div class="c">19</div>
+    <div>20</div>
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div class="c">25</div>
+    <div class="c">26</div>
+    <div>27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>   
+    <div></div>
+  </div>
+  <div id="labpopup">
+    <p id="labtext"></p>
+    <div id="labpic"></div>
+    <button onclick="closeLab()">Okay</button>
+  </div>
+  <script>
+  function showLab(text){
+  document.getElementById('labtext').textContent = text;
+  
+document.getElementById('labpopup').classList.add('show');
+}
+  
+  function closeLab(){
+  document.getElementById('labpopup').classList.remove('show');
+  }
+  
+  </script>
+</body>
+</html>

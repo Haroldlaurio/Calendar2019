@@ -1,0 +1,280 @@
+body {
+ background-color: antiquewhite;
+}
+
+.class{
+ display: flex;
+ flex-wrap: wrap;
+ margin-bottom: 5%;
+ justify-content: space-evenly;
+ margin-top: 5%;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ background-color: none;
+}
+
+.class > div {
+  color: white;
+  border: 2px black solid;
+  font-size: 150%;
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+  transition: all 0.2s ease;
+}
+
+.class > div:hover {
+  color: red;
+  background-color: purple
+}
+
+.class > div:active {
+  background-color: greenyellow;
+  transform: scale(0.80);
+}
+
+.jan {
+  background-color: gray;
+}
+
+.feb {
+  background-color: gray;
+}
+
+.mar {
+  background-color: gray;
+}
+
+.apr {
+  background-color: gray;
+}
+
+.may {
+  background-color: gray;
+}
+
+.jun{
+  background-color: gray;
+}
+
+.jul {
+  position: relative;
+  background-color: orangered;
+  scale: 0.80;
+}
+
+.jul::before {
+  content: "🔻";    
+  position: absolute;
+  top: -40px;
+  right: 25%;
+  background: none;
+}
+.jul::after {
+  content: "🔺";    
+  position: absolute;
+  bottom: -40px;
+  right: 25%;
+  background: none;
+}
+
+.aug {
+  background-color: gray;
+}
+
+.sep {
+  background-color: gray;
+}
+
+.oct {
+  background-color: gray;
+}
+
+.nov {
+  background-color: gray;
+}
+
+.dec {
+  background-color: gray;
+}
+
+.a {
+ margin-right: 20%;
+ margin-left: 20%;
+ margin-bottom: 2%;
+ color: whitesmoke;
+ background-image: url(1.jpg) ;
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding: 10%;
+ text-align: center;
+ font-size: 250%;
+ font-weight: bolder;
+ font-style: italic;
+ text-shadow: 4px 4px 2px black;
+ border-top-right-radius: 30%;
+ border-top-left-radius: 30%;
+ border-bottom-left-radius: 30%;
+ border-bottom-right-radius: 50%;
+ box-shadow: yellowgreen -20px -20px 40px;
+ border-top: none;
+ border-left: none;
+ border-bottom: 2px greenyellow solid;
+ border-right: 2px greeyellow solid;
+}
+
+.b {
+ background-image: url(1.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom;
+ border: 5px green solid;
+ border-radius: 30px;
+ border-right: 1px green solid;
+ border-bottom: none;
+ display: grid;
+ grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr 5fr;
+ grid-template-rows: 5fr;
+ margin: 10px;
+ margin-left: 3%;
+ margin-right: 3%;
+ box-shadow: -20px 20px 20px black
+}
+
+.b > div {
+ background-color: beige;
+ border: 3px white solid;
+ border-top-color: white;
+ border-left-color: red;
+ border-right-color: blueviolet;
+ border-radius: 30px;
+ border-top: none;
+ border-bottom: none;
+ text-align: center;
+ font-weight: bolder;
+ font-style: oblique;
+ margin: 5px;
+ padding-top: 40px;
+ padding-bottom: 40px;
+}
+
+.c {
+ color: red;
+}
+
+.d {
+ background-image: url(1.jpg);
+ background-repeat: no-repeat;
+ border: 5px green solid;
+ background-size: cover;
+ border-radius: 30px;
+ border-right: none;
+ border-top: none;
+ border-right: 1px green solid;
+ display: grid;
+ grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr 5fr ;
+ grid-template-rows: 5fr 5fr 5fr 5fr 5fr;
+ margin: 10px;
+ margin-left: 3%;
+ margin-right: 3%;
+ box-shadow: -20px 20px 20px black 
+}
+
+.d > div {
+ background-color: bisque;
+ border: 3px white solid;
+ border-left-color: blueviolet;
+ border-right-color: red;
+ border-radius: 50px;
+ border-top: none;
+ border-bottom: none;
+ text-align: center;
+ font-weight: bolder;
+ font-style: oblique;
+ margin: 5px;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ font-size: 150%;
+}
+
+.e{
+ color: blue;
+ transition: all 0.2s ease;
+}
+
+.e:hover {
+ background-color: aqua;
+ transform: scale(0.80)
+}
+
+.e:active {
+ color: black;
+ background-color: red;
+ transform: scale(0.80)
+}
+
+.f {
+ color: red;
+ font-size: 10px;
+ background-color: aqua;
+ margin: 5px;
+}
+
+#igpopup {
+ position: fixed;
+ bottom: 1;
+ left: 0;
+ right: 0;
+ text-align: center;
+ background-color: none;
+ font-weight: bolder;
+ border-radius: 10px;
+ box-shadow: 0px 0px 20px black;
+ margin-top: 20px;
+ margin-left: 10%;
+ margin-right: 10%;
+ opacity: 0;                  
+ pointer-events: none; 
+ transform: scale(0);
+ transition: opacity 0.6s ease, transform 0.6s ease;
+ box-shadow: 0px 0px 20px black ;
+}
+
+#igpopup.show {
+ opacity: 1;
+ pointer-events: auto;
+ transform: scale(1);
+}
+
+#igpopup button {
+ margin-bottom: 5px;
+ margin-top: 10px;
+ background-color: greenyellow;
+ border-radius: 10px;
+ border: 2px red solid;
+ transition: all 0.2s ease;
+ font-size: 120%;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 88%;
+}
+
+#igpopup button:hover{
+ background-color: blue;
+}
+
+#igpopup button:active{
+ border: 2px green solid;
+ background-color: red;
+ transform: scale(0.80);
+}
+
+#igpic {
+ background-image: url(ig.jpg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: center;
+ padding: 30px;
+}

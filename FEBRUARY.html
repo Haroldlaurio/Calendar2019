@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>February</title>
+  <link rel="stylesheet" href="FEBRUARY.css">
+</head>
+<body>
+  <div class="class">
+    <div class="jan" onclick="window.location.href='JANUARY.html'">
+      <p>Jan</p>
+    </div>
+    <div class="feb" onclick="window.location.href='FEBRUARY.html'">
+      <p>Feb</p>
+    </div>
+    <div class="mar" onclick="window.location.href='MARCH.html'">
+      <p>Mar</p>
+    </div>
+    <div class="apr" onclick="window.location.href='APRIL.html'">
+      <p>Apr</p>
+    </div>
+    <div class="may" onclick="window.location.href='MAY.html'">
+      <p>May</p>
+    </div>
+    <div class="jun" onclick="window.location.href='JUNE.html'">
+      <p>Jun</p>
+    </div>
+    <div class="jul" onclick="window.location.href='JULY.html'">
+      <p>Jul</p>
+    </div>
+    <div class="aug" onclick="window.location.href='AUGUST.html'">
+      <p>Aug</p>
+    </div>
+    <div class="sep" onclick="window.location.href='SEPTEMBER.html'">
+      <p>Sep</p>
+    </div>
+    <div class="oct" onclick="window.location.href='OCTOBER.html'">
+      <p>Oct</p>
+    </div>
+    <div class="nov" onclick="window.location.href='NOVEMBER.html'">
+      <p>Nov</p>
+    </div>
+    <div class="dec" onclick="window.location.href='DECEMBER.html'">
+      <p>Dec</p>
+    </div>
+  </div>
+  <div>
+    <div class="a"> FEBRUARY 2019</div>
+  </div>
+    <div class="b">
+    <div class="c">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div class="c">SAT</div>
+    </div>
+  <div class="d">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>1</div>
+    <div class="e"
+   onclick="showConstitution('Constitution Day')">2</div>
+    <div class="c">3</div>
+    <div>4</div>
+    <div class="e"
+      onclick="showChinese('Chinese New Year Day')">5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div class="c">9</div>
+    <div class="c">10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div class="c">16</div>
+    <div class="c">17</div>
+    <div>18</div>
+    <div class="e" onclick="showLantern('Lantern Festival')">19</div>
+    <div>20</div>
+    <div>21</div>
+    <div>22</div>
+    <div class="c">23</div>
+    <div class="c">24</div>
+    <div class="e" onclick="showEDSA('EDSA Revolution Anniversary')">25</div>
+    <div>26</div>
+    <div>27</div>
+    <div>28</div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="conspopup">
+   <p id="constext"></p>
+   <div id="conspic"></div>
+   <button onclick="closeCons()">OKAY</button>
+  </div>
+   <div id="chipopup">
+   <p id="chitext"></p>
+   <div id="chipic"></div>
+   <button onclick="closeChi()">OKAY</button>
+  </div>
+  <div id="lanpopup">
+   <p id="lantext"></p>
+   <div id="lanpic"></div>
+   <button onclick="closeLan()">OKAY</button>
+  </div>
+  <div id="edsapopup">
+   <p id="edsatext"></p>
+   <div id="edsapic"></div>
+   <button onclick="closeEDSA()">OKAY</button>
+  </div>
+  <script>
+  function showConstitution(text){
+  document.getElementById('chipopup').classList.remove('show');
+    document.getElementById('lanpopup').classList.remove('show');
+    document.getElementById('edsapopup').classList.remove('show');
+  document.getElementById('constext').textContent = text;
+  document.getElementById('conspopup').classList.add('show');
+}
+
+function closeCons(){
+  document.getElementById('conspopup').classList.remove('show');
+}
+
+function showChinese(text){
+  document.getElementById('conspopup').classList.remove('show');
+  document.getElementById('lanpopup').classList.remove('show');
+  document.getElementById('edsapopup').classList.remove('show');
+  document.getElementById('chitext').textContent = text;
+  document.getElementById('chipopup').classList.add('show');
+}
+
+function closeChi(){
+  document.getElementById('chipopup').classList.remove('show');
+}
+  
+  
+ function showLantern(text){
+  document.getElementById('edsapopup').classList.remove('show');
+   document.getElementById('chipopup').classList.remove('show');
+   document.getElementById('conspopup').classList.remove('show');
+  document.getElementById('lantext').textContent = text;
+  document.getElementById('lanpopup').classList.add('show');
+}
+
+function closeLan(){
+  document.getElementById('lanpopup').classList.remove('show');
+}
+
+function showEDSA(text){
+  document.getElementById('lanpopup').classList.remove('show');
+  document.getElementById('chipopup').classList.remove('show');
+  document.getElementById('conspopup').classList.remove('show')
+  document.getElementById('edsatext').textContent = text;
+  document.getElementById('edsapopup').classList.add('show');
+}
+
+function closeEDSA(){
+  document.getElementById('edsapopup').classList.remove('show');
+}
+
+</script>
+</body>
+</html>
