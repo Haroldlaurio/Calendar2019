@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>August</title>
+  <link rel="stylesheet" href="AUGUST.css">
+</head>
+<body>
+  <div class="class">
+    <div class="jan" onclick="window.location.href='JANUARY.html'">
+      <p>Jan</p>
+    </div>
+    <div class="feb" onclick="window.location.href='FEBRUARY.html'">
+      <p>Feb</p>
+    </div>
+    <div class="mar" onclick="window.location.href='MARCH.html'">
+      <p>Mar</p>
+    </div>
+    <div class="apr" onclick="window.location.href='APRIL.html'">
+      <p>Apr</p>
+    </div>
+    <div class="may" onclick="window.location.href='MAY.html'">
+      <p>May</p>
+    </div>
+    <div class="jun" onclick="window.location.href='JUNE.html'">
+      <p>Jun</p>
+    </div>
+    <div class="jul" onclick="window.location.href='JULY.html'">
+      <p>Jul</p>
+    </div>
+    <div class="aug" onclick="window.location.href='AUGUST.html'">
+      <p>Aug</p>
+    </div>
+    <div class="sep" onclick="window.location.href='SEPTEMBER.html'">
+      <p>Sep</p>
+    </div>
+    <div class="oct" onclick="window.location.href='OCTOBER.html'">
+      <p>Oct</p>
+    </div>
+    <div class="nov" onclick="window.location.href='NOVEMBER.html'">
+      <p>Nov</p>
+    </div>
+    <div class="dec" onclick="window.location.href='DECEMBER.html'">
+      <p>Dec</p>
+    </div>
+  </div>
+  <div>
+    <div class="a">AUGUST 2019</div>
+  </div>
+    <div class="b">
+    <div class="c">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div class="c">SAT</div>
+    </div>
+  <div class="d">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div>1</div>
+    <div>2</div>
+    <div class="c">3</div>
+    <div class="c">4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div class="c">10</div>
+    <div class="e"
+      onclick="showFe('Feast of the Sacrifice')">11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div class="c">17</div>
+    <div class="c">18</div>
+    <div>19</div>
+    <div>20</div>
+    <div class="e"
+      onclick="showAq('Ninoy Aquino Day')">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div class="c">24</div>
+    <div class="c">25</div>
+    <div class="e"
+      onclick="showNat('National Heroes Day')">26</div>
+    <div>27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <div class="e"
+      onclick="showIs('Islamic New Year')">31</div>
+  </div>
+  <div id="fepopup">
+    <p id="fetext"></p>
+    <div id="fepic"></div>
+    <button onclick="closeFe()">Okay</button>
+  </div>
+  <div id="aqpopup">
+    <p id="aqtext"></p>
+    <div id="aqpic"></div>
+    <button onclick="closeAq()">Okay</button>
+  </div>
+  <div id="natpopup">
+    <p id="nattext"></p>
+    <div id="natpic"></div>
+    <button onclick="closeNat()">Okay</button>
+  </div>
+  <div id="ispopup">
+    <p id="istext"></p>
+    <div id="ispic"></div>
+    <button onclick="closeIs()">Okay</button>
+  </div>
+  
+  <script>
+  function showFe(text){
+    document.getElementById('aqpopup').classList.remove('show');
+    document.getElementById('ispopup').classList.remove('show');
+    document.getElementById('natpopup').classList.remove('show');
+    document.getElementById('fetext').textContent = text;
+    document.getElementById('fepopup').classList.add('show')
+  }
+  function closeFe(){
+    document.getElementById('fepopup').classList.remove('show');
+  }
+  
+  function showAq(text){
+    document.getElementById('fepopup').classList.remove('show');
+    document.getElementById('ispopup').classList.remove('show');
+    document.getElementById('natpopup').classList.remove('show');
+    document.getElementById('aqtext').textContent = text;
+    document.getElementById('aqpopup').classList.add('show');
+  }
+  function closeAq(){
+    document.getElementById('aqpopup').classList.remove('show');
+  }
+  
+  
+  function showNat(text){
+    document.getElementById('aqpopup').classList.remove('show');
+    document.getElementById('fepopup').classList.remove('show');
+    document.getElementById('ispopup').classList.remove('show');
+    document.getElementById('nattext').textContent = text;
+    document.getElementById('natpopup').classList.add('show');
+  }
+  function closeNat(){
+    document.getElementById('natpopup').classList.remove('show');
+  }
+  
+  
+  function showIs(text){
+    document.getElementById('aqpopup').classList.remove('show');
+    document.getElementById('natpopup').classList.remove('show');
+    document.getElementById('fepopup').classList.remove('show');
+    document.getElementById('istext').textContent = text;
+    document.getElementById('ispopup').classList.add('show');
+  }
+  function closeIs(){
+    document.getElementById('ispopup').classList.remove('show');
+  }
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>April</title>
+  <link rel="stylesheet" href="APRIL.css">
+</head>
+<body>
+  <div class="class">
+    <div class="jan" onclick="window.location.href='JANUARY.html'">
+      <p>Jan</p>
+    </div>
+    <div class="feb" onclick="window.location.href='FEBRUARY.html'">
+      <p>Feb</p>
+    </div>
+    <div class="mar" onclick="window.location.href='MARCH.html'">
+      <p>Mar</p>
+    </div>
+    <div class="apr" onclick="window.location.href='APRIL.html'">
+      <p>Apr</p>
+    </div>
+    <div class="may" onclick="window.location.href='MAY.html'">
+      <p>May</p>
+    </div>
+    <div class="jun" onclick="window.location.href='JUNE.html'">
+      <p>Jun</p>
+    </div>
+    <div class="jul" onclick="window.location.href='JULY.html'">
+      <p>Jul</p>
+    </div>
+    <div class="aug" onclick="window.location.href='AUGUST.html'">
+      <p>Aug</p>
+    </div>
+    <div class="sep" onclick="window.location.href='SEPTEMBER.html'">
+      <p>Sep</p>
+    </div>
+    <div class="oct" onclick="window.location.href='OCTOBER.html'">
+      <p>Oct</p>
+    </div>
+    <div class="nov" onclick="window.location.href='NOVEMBER.html'">
+      <p>Nov</p>
+    </div>
+    <div class="dec" onclick="window.location.href='DECEMBER.html'">
+      <p>Dec</p>
+    </div>
+  </div>
+  <div>
+    <div class="a"> APRIL 2019</div>
+  </div>
+    <div class="b">
+    <div class="c">SUN</div>
+    <div>MON</div>
+    <div>TUE</div>
+    <div>WED</div>
+    <div>THU</div>
+    <div>FRI</div>
+    <div class="c">SAT</div>
+    </div>
+  <div class="d">
+    <div></div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="c">6</div>
+    <div class="c">7</div>
+    <div>8</div>
+    <div class="e"
+   onclick="showValor('Day of valor')">9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="c">13</div>
+    <div class="c">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div class="e"
+   onclick="showThu('Maundy Thursday')">18</div>
+    <div class="e"
+   onclick="showFri('Good Friday')">19</div>
+    <div class="e"
+   onclick="showSat('Easter Saturday')">20</div>
+    <div class="e"
+   onclick="showSun('Easter Sunday')">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="e"
+   onclick="showLapu('Lapu Lapu Day')">27</div>
+    <div class="c">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="valpopup">
+   <p id="valtext"></p>
+   <div id="valpic"></div>
+   <button onclick="closeVal()">OKAY</button>
+  </div>
+   <div id="thupopup">
+   <p id="thutext"></p>
+   <div id="thupic"></div>
+   <button onclick="closeThu()">OKAY</button>
+  </div>
+  <div id="fripopup">
+   <p id="fritext"></p>
+   <div id="fripic"></div>
+   <button onclick="closeFri()">OKAY</button>
+  </div>
+  <div id="satpopup">
+   <p id="sattext"></p>
+   <div id="satpic"></div>
+   <button onclick="closeSat()">OKAY</button>
+  </div>
+  <div id="sunpopup">
+   <p id="suntext"></p>
+   <div id="sunpic"></div>
+   <button onclick="closeSun()">OKAY</button>
+  </div>
+  <div id="lapupopup">
+   <p id="laputext"></p>
+   <div id="lapupic"></div>
+   <button onclick="closeLapu()">OKAY</button>
+  </div>
+  <script>
+  function showValor(text){
+  document.getElementById('thupopup').classList.remove('show');
+    document.getElementById('fripopup').classList.remove('show');
+    document.getElementById('satpopup').classList.remove('show');
+    document.getElementById('sunpopup').classList.remove('show');
+    document.getElementById('lapupopup').classList.remove('show');
+  document.getElementById('valtext').textContent = text;
+  document.getElementById('valpopup').classList.add('show');
+}
+
+function closeVal(){
+  document.getElementById('valpopup').classList.remove('show');
+}
+
+function showThu(text){
+  document.getElementById('valpopup').classList.remove('show');
+  document.getElementById('fripopup').classList.remove('show');
+  document.getElementById('satpopup').classList.remove('show');
+  document.getElementById('sunpopup').classList.remove('show');
+  document.getElementById('lapupopup').classList.remove('show');
+  document.getElementById('thutext').textContent = text;
+  document.getElementById('thupopup').classList.add('show');
+}
+
+function closeThu(){
+  document.getElementById('thupopup').classList.remove('show');
+}
+  
+  
+ function showFri(text){
+  document.getElementById('valpopup').classList.remove('show');
+   document.getElementById('thupopup').classList.remove('show');
+   document.getElementById('satpopup').classList.remove('show');
+   document.getElementById('sunpopup').classList.remove('show');
+   document.getElementById('lapupopup').classList.remove('show');
+  document.getElementById('fritext').textContent = text;
+  document.getElementById('fripopup').classList.add('show');
+}
+
+function closeFri(){
+  document.getElementById('fripopup').classList.remove('show');
+}
+
+function showSat(text){
+  document.getElementById('valpopup').classList.remove('show');
+  document.getElementById('thupopup').classList.remove('show');
+  document.getElementById('fripopup').classList.remove('show')
+  document.getElementById('sunpopup').classList.remove('show');
+  document.getElementById('lapupopup').classList.remove('show');
+  document.getElementById('sattext').textContent = text;
+  document.getElementById('satpopup').classList.add('show');
+}
+
+function closeSat(){
+  document.getElementById('satpopup').classList.remove('show');
+}
+
+  
+  function showSun(text){
+  document.getElementById('valpopup').classList.remove('show');
+   document.getElementById('thupopup').classList.remove('show');
+   document.getElementById('fripopup').classList.remove('show');
+    document.getElementById('satpopup').classList.remove('show');
+    document.getElementById('lapupopup').classList.remove('show');
+  document.getElementById('suntext').textContent = text;
+  document.getElementById('sunpopup').classList.add('show');
+}
+
+function closeSun(){
+  document.getElementById('sunpopup').classList.remove('show');
+}
+
+function showLapu(text){
+  document.getElementById('valpopup').classList.remove('show');
+  document.getElementById('thupopup').classList.remove('show');
+  document.getElementById('fripopup').classList.remove('show')
+  document.getElementById('satpopup').classList.remove('show');
+  document.getElementById('sunpopup').classList.remove('show');
+  document.getElementById('laputext').textContent = text;
+  document.getElementById('lapupopup').classList.add('show');
+}
+
+function closeLapu(){
+  document.getElementById('lapupopup').classList.remove('show');
+}
+  </script>
+</body>
+</html>
